@@ -1,0 +1,24 @@
+<style>
+.app {
+    height: 100vh;;
+}
+</style>
+
+<div class="app">
+    <div class="w-100 py-5 text-center bg-primary text-white">
+
+        <h1>DMO Code Challenge</h1>
+    </div>
+    <div class="card mx-auto my-5" style="width: 18rem;">
+        <div class="card-body">
+            <form #mainForm="ngForm" (ngSubmit)="getresult(mainForm.value)">
+                <div class="form-group align-center">
+                    <label for="combnumber">Pair Bracket Number: </label>
+                    <input class="form-control" ngModel type="number" name="combnumber" min="0" />
+                </div>
+                <button class="btn btn-primary" type="submit">Calculate</button>
+            </form>
+        </div>
+    </div>
+    <p id="ben"></p>
+</div>
